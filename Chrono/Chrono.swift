@@ -21,7 +21,7 @@ final public class Chrono {
         context = JSContext()
         
         // Load chrono.min.js
-        let path = Bundle.main.path(forResource: "chrono.min", ofType: "js")
+        let path = Bundle(for: Chrono.self).path(forResource: "chrono.min", ofType: "js")
         let url = URL(fileURLWithPath: path!)
         var chronoJSSource = try! String(contentsOf: url, encoding: .utf8)
         
