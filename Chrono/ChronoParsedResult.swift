@@ -9,7 +9,7 @@
 import Foundation
 
 /// A struct that contains details about a parsed result from a call to `Chrono`’s `parsedResultsFrom(naturalLanguageString:referenceDate:)` method. You should not create instances of `ChronoParsedResult` yourself.
-struct ChronoParsedResult {
+public struct ChronoParsedResult {
     
     /// The input natural language phrase
     private(set) var inputString: String?
@@ -45,7 +45,7 @@ struct ChronoParsedResult {
 // Overriding output of `print(ChronoParsedResult)` to make it more useful
 extension ChronoParsedResult: CustomStringConvertible {
     
-    var description: String {
+    public var description: String {
         let inputStringDescription = self.inputString?.description ?? "nil"
         let indexOfStartingCharacterOfTimePhraseDescription = self.indexOfStartingCharacterOfTimePhrase?.description ?? "nil"
         let timePhraseDescription = self.timePhrase?.description ?? "nil"

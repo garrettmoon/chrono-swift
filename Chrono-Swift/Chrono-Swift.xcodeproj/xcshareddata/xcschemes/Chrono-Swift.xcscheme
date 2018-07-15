@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "682B960B20FC07E70053500C"
-               BuildableName = "Chrono_Swift.framework"
+               BuildableName = "ChronoSwift.framework"
                BlueprintName = "Chrono-Swift"
                ReferencedContainer = "container:Chrono-Swift.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "682B960B20FC07E70053500C"
-            BuildableName = "Chrono_Swift.framework"
+            BuildableName = "ChronoSwift.framework"
             BlueprintName = "Chrono-Swift"
             ReferencedContainer = "container:Chrono-Swift.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "682B960B20FC07E70053500C"
-            BuildableName = "Chrono_Swift.framework"
+            BuildableName = "ChronoSwift.framework"
             BlueprintName = "Chrono-Swift"
             ReferencedContainer = "container:Chrono-Swift.xcodeproj">
          </BuildableReference>

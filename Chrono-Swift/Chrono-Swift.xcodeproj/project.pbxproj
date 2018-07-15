@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		682B960C20FC07E70053500C /* ChronoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChronoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		682B960C20FC07E70053500C /* Chrono.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Chrono.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		682B961020FC07E70053500C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		682B961920FC081E0053500C /* chrono.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = chrono.min.js; sourceTree = "<group>"; };
 		682B961A20FC081E0053500C /* Chrono.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chrono.swift; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		682B960D20FC07E70053500C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				682B960C20FC07E70053500C /* ChronoSwift.framework */,
+				682B960C20FC07E70053500C /* Chrono.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,7 +115,7 @@
 			);
 			name = "Chrono-Swift";
 			productName = "Chrono-Swift";
-			productReference = 682B960C20FC07E70053500C /* ChronoSwift.framework */;
+			productReference = 682B960C20FC07E70053500C /* Chrono.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -311,7 +311,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.Chrono-Swift";
-				PRODUCT_NAME = ChronoSwift;
+				PRODUCT_NAME = Chrono;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -337,7 +337,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.Chrono-Swift";
-				PRODUCT_NAME = ChronoSwift;
+				PRODUCT_NAME = Chrono;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

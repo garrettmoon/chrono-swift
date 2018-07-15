@@ -10,10 +10,10 @@ import Foundation
 import JavaScriptCore
 
 /// A singleton that contains methods for extracting date information from natural language phrases. Subclassing is not allowed.
-final class Chrono {
+final public class Chrono {
     
     /// Use this property to get the shared singleton instance of `Chrono`
-    static let shared = Chrono()
+    public static let shared = Chrono()
     private var context: JSContext
     
     private init() {
@@ -43,7 +43,7 @@ final class Chrono {
      
      - Returns: A `Date` extracted from the input `naturalLanguageString`. If a `Date` could not be found, returns `nil`.
      */
-    func dateFrom(naturalLanguageString: String) -> Date? {
+    public func dateFrom(naturalLanguageString: String) -> Date? {
         let results = parsedResultsFrom(naturalLanguageString: naturalLanguageString, referenceDate: nil)
         guard let date = results.startDate else { return nil }
         return date
@@ -58,7 +58,7 @@ final class Chrono {
      
      - Returns: A `DateInterval` extracted from the input `naturalLanguageString`. If a `DateInterval` could not be found, returns `nil`.
      */
-    func dateIntervalFrom(naturalLanguageString: String) -> DateInterval? {
+    public func dateIntervalFrom(naturalLanguageString: String) -> DateInterval? {
         let results = parsedResultsFrom(naturalLanguageString: naturalLanguageString, referenceDate: nil)
         guard let startDate = results.startDate, let endDate = results.endDate else { return nil }
         return DateInterval(start: startDate, end: endDate)
@@ -74,7 +74,7 @@ final class Chrono {
      
      - Returns: A `Date` extracted from the input `naturalLanguageString` and calculated based on the `referenceDate`. If a `Date` could not be found, returns `nil`.
      */
-    func dateFrom(naturalLanguageString: String, referenceDate: Date) -> Date? {
+    public func dateFrom(naturalLanguageString: String, referenceDate: Date) -> Date? {
         let results = parsedResultsFrom(naturalLanguageString: naturalLanguageString, referenceDate: referenceDate)
         guard let date = results.startDate else { return nil }
         return date
@@ -90,7 +90,7 @@ final class Chrono {
      
      - Returns: A `DateInterval` extracted from the input `naturalLanguageString` and calculated based on the `referenceDate`. If a `DateInterval` could not be found, returns `nil`.
      */
-    func dateIntervalFrom(naturalLanguageString: String, referenceDate: Date) -> DateInterval? {
+    public func dateIntervalFrom(naturalLanguageString: String, referenceDate: Date) -> DateInterval? {
         let results = parsedResultsFrom(naturalLanguageString: naturalLanguageString, referenceDate: referenceDate)
         guard let startDate = results.startDate, let endDate = results.endDate else { return nil }
         return DateInterval(start: startDate, end: endDate)
@@ -106,7 +106,7 @@ final class Chrono {
      
      - Returns: A `ChronoParsedResult` with details about extracted date information
      */
-    func parsedResultsFrom(naturalLanguageString: String, referenceDate: Date?) -> ChronoParsedResult {
+    public func parsedResultsFrom(naturalLanguageString: String, referenceDate: Date?) -> ChronoParsedResult {
         context.setObject(naturalLanguageString, forKeyedSubscript: "naturalLanguageString" as NSString)        
         
         if let referenceDate = referenceDate {
